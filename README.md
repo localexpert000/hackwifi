@@ -56,8 +56,8 @@ Second, only the latest versions of these programs are supported and must be ins
 Run hackwifi
 ----------
 ```
-git clone https://github.com/derv82/hackwifi2.git
-cd hackwifi2
+git clone github.com/localexpert000/hackwifi-get
+cd hackwifi
 sudo ./hackwifi.py
 ```
 
