@@ -89,7 +89,7 @@ class Hackwifi(object):
 
 def entry_point():
     try:
-        hackwifi = hackwifi()
+        hackwifi = Hackwifi()
         hackwifi.start()
     except Exception as e:
         Color.pexception(e)
