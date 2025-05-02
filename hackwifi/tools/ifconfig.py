@@ -47,13 +47,13 @@ class Ifconfig(Dependency):
 
         # Mac address separated by dashes
         mac_dash_regex = ('[a-zA-Z0-9]{2}-' * 6)[:-1]
-        match = re.search(' ({})'.format(mac_dash_regex), output)
+        match = re.search(r' ({})'.format(mac_dash_regex), output)
         if match:
             return match.group(1).replace('-', ':')
 
         # Mac address separated by colons
-        mac_colon_regex = ('[a-zA-Z0-9]{2}:' * 6)[:-1]
-        match = re.search(' ({})'.format(mac_colon_regex), output)
+        mac_colon_regex = (r'[a-zA-Z0-9]{2}:' * 6)[:-1]
+        match = re.search(r' ({})'.format(mac_colon_regex), output)
         if match:
             return match.group(1)
 
