@@ -6,7 +6,7 @@ from .util.color import Color
 import argparse, sys
 
 class Arguments(object):
-    ''' Holds arguments used by the hackwifi '''
+    ''' Holds arguments used by the Hackwifi '''
 
     def __init__(self, configuration):
         # Hack: Check for -v before parsing args; so we know which commands to display.
